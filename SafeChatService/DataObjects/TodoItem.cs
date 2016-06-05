@@ -1,6 +1,6 @@
 ﻿using Microsoft.Azure.Mobile.Server;
 
-namespace SafeChatService.DataObjects
+namespace BlacklightService.DataObjects
 {
     public class TodoItem : EntityData
     {

@@ -6,11 +6,11 @@ using System.Web.Http;
 using Microsoft.Azure.Mobile.Server;
 using Microsoft.Azure.Mobile.Server.Authentication;
 using Microsoft.Azure.Mobile.Server.Config;
-using SafeChatService.DataObjects;
-using SafeChatService.Models;
+using BlacklightService.DataObjects;
+using BlacklightService.Models;
 using Owin;
 
-namespace SafeChatService
+namespace BlacklightService
 {
     public partial class Startup
     {
@@ -26,10 +26,10 @@ namespace SafeChatService
                 .ApplyTo(config);
 
             // Use Entity Framework Code First to create database tables based on your DbContext
-            Database.SetInitializer(new SafeChatInitializer());
+            Database.SetInitializer(new BlacklightInitializer());
 
             // To prevent Entity Framework from modifying your database schema, use a null database initializer
-            // Database.SetInitializer<SafeChatContext>(null);
+            // Database.SetInitializer<BlacklightContext>(null);
 
             MobileAppSettingsDictionary settings = config.GetMobileAppSettingsProvider().GetMobileAppSettings();
 
@@ -49,9 +49,9 @@ namespace SafeChatService
         }
     }
 
-    public class SafeChatInitializer : CreateDatabaseIfNotExists<SafeChatContext>
+    public class BlacklightInitializer : CreateDatabaseIfNotExists<BlacklightContext>
     {
-        protected override void Seed(SafeChatContext context)
+        protected override void Seed(BlacklightContext context)
         {
             List<TodoItem> todoItems = new List<TodoItem>
             {

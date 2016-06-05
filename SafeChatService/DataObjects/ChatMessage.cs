@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SafeChatService.DataObjects
+namespace BlacklightService.DataObjects
 {
     public class ChatMessage
 

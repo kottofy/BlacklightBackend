@@ -3,7 +3,7 @@ using System.Web.Http.Tracing;
 using Microsoft.Azure.Mobile.Server;
 using Microsoft.Azure.Mobile.Server.Config;
 
-namespace SafeChatService.Controllers
+namespace BlacklightService.Controllers
 {
     // Use the MobileAppController attribute for each ApiController you want to use  
     // from your mobile clients 

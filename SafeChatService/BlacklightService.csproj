@@ -184,6 +184,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\BlacklightBackend %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\BlacklightBackend.pubxml" />
     <None Include="Properties\PublishProfiles\safechatbackend.pubxml" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4.js" />

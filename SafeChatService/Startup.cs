@@ -1,9 +1,9 @@
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(SafeChatService.Startup))]
+[assembly: OwinStartup(typeof(BlacklightService.Startup))]
 
-namespace SafeChatService
+namespace BlacklightService
 {
     public partial class Startup
     {

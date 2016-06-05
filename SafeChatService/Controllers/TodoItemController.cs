@@ -4,17 +4,17 @@ using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.OData;
 using Microsoft.Azure.Mobile.Server;
-using SafeChatService.DataObjects;
-using SafeChatService.Models;
+using BlacklightService.DataObjects;
+using BlacklightService.Models;
 
-namespace SafeChatService.Controllers
+namespace BlacklightService.Controllers
 {
     public class TodoItemController : TableController<TodoItem>
     {
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
-            SafeChatContext context = new SafeChatContext();
+            BlacklightContext context = new BlacklightContext();
             DomainManager = new EntityDomainManager<TodoItem>(context, Request);
         }
 

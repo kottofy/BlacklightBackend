@@ -3,11 +3,11 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using Microsoft.Azure.Mobile.Server;
 using Microsoft.Azure.Mobile.Server.Tables;
-using SafeChatService.DataObjects;
+using BlacklightService.DataObjects;
 
-namespace SafeChatService.Models
+namespace BlacklightService.Models
 {
-    public class SafeChatContext : DbContext
+    public class BlacklightContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
         // 
@@ -18,7 +18,7 @@ namespace SafeChatService.Models
 
         private const string connectionStringName = "Name=MS_TableConnectionString";
 
-        public SafeChatContext() : base(connectionStringName)
+        public BlacklightContext() : base(connectionStringName)
         {
         } 
 
